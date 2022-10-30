@@ -1,0 +1,16 @@
+@import "fonts";
+@import "blocks/header";
+@import "blocks/navigation";
+@import "blocks/authorization";
+@import "blocks/registration";
+@import "blocks/tabs";
+@import "blocks/main";
+@import "blocks/form";
+
+body {
+  font-family: 'Russia', Arial, sans-serif;
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #3464E0;
+  overflow-x: hidden;
+}

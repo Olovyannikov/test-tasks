@@ -1,0 +1,177 @@
+.table {
+  border-collapse: collapse;
+  margin: 40px auto 0 18px;
+  transition: .2s ease-in-out;
+}
+.table__header-div {
+  background-color: #fff;
+  color: #444;
+  padding-top: 15px;
+  border-right: 2px solid #FFFFFF;
+  &--disabled {
+    background-color: transparent;
+  }
+  &--subtitle {
+    font-weight: lighter;
+    color: $c-grey;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.table__body-div--descript {
+  color: #283645;
+}
+.table__body-cell-text {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  display: none;
+}
+.table__body-div {
+  min-width: 140px;
+  padding: 14px 25px;
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  &--unavailable {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 19px;
+      height: 19px;
+      top: 0;
+      right: 0;
+      background-color: $c-grey;
+    }
+    &:hover {
+      background-color: $c-grey;
+    }
+  }
+  &--available {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    color: $c-light;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 19px;
+      height: 19px;
+      top: 0;
+      right: 0;
+      color: $c-light;
+      background-color: #2BC584;
+    }
+    &:hover {
+      background-color: #2BC584;
+    }
+  }
+  &--denied {
+    position: relative;
+    color: $c-light;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 19px;
+      height: 19px;
+      top: 0;
+      right: 0;
+      background-color: #E06364;
+    }
+    &:hover {
+      background-color: #E06364;
+    }
+  }
+  &--active {
+    background-color: $c-grey;
+  }
+}
+
+.first-table {
+  transform: translate(0,0);
+}
+.second-table {
+  transform: translate(-32%,0);
+}
+.third-table {
+  transform: translate(-65%,0);
+}
+
+.table__body-div:hover {
+  .table__body-cell-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.table__body-div {
+
+
+}
+
+  .table {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  /* стили для индикаторов */
+
+  .table__indicators {
+    width: 92px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-bottom: 40px;
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  .table__indicators li  {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #3464E0;
+  }
+
+  .table__indicators li.active {
+    width: 16px;
+    height: 16px;
+    background-color: #FFF;
+    border: 2px solid #3464E0;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #3464e0;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+    }
+  }
+
+  .table__header-div {
+    max-width: 138px;
+  }
+
+  @media (max-width: 1390px) {
+    .table {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,62 @@
+.authorization {
+  position: relative;
+  background: #FFFFFF;
+  width: 490px;
+  min-height: 408px;
+  margin: 0 auto;
+  border-radius: 4px;
+  display: none;
+
+  transition: .5s;
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 472px;
+    height: 298px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    top: -21px;
+    left: 9px;
+    z-index: -1;
+
+    transition: .5s;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    width: 461px;
+    height: 330px;
+    top: -38px;
+    left: 14px;
+    z-index: -1;
+
+    transition: .5s;
+  }
+}
+
+.authorization__form {
+  padding-left: 68px;
+}
+
+@media (max-width: 500px) {
+  .authorization {
+    width: 95%;
+    box-sizing: border-box;
+    &::before {
+      left: 9%;
+      width: 80%;
+    }
+    &::after {
+      width: 90%;
+      left: 5%;
+    }
+  }
+
+  .authorization__form {
+    padding-left: 20px;
+  }
+}

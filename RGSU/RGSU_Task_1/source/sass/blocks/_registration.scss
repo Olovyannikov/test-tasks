@@ -1,0 +1,76 @@
+.registration {
+  position: relative;
+  background: #FFFFFF;
+  width: 890px;
+  min-height: 408px;
+  margin: 0 auto;
+  border-radius: 4px;
+  display: none;
+
+  transition: .5s;
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 856px;
+    height: 298px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    top: -21px;
+    left: 16px;
+    z-index: -1;
+
+    transition: .5s;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    width: 838px;
+    height: 330px;
+    top: -38px;
+    left: 25px;
+    z-index: -1;
+    transition: .5s;
+  }
+}
+
+.registration__form {
+  padding-left: 34px;
+}
+
+@media (max-width: 500px) {
+  .registration {
+    width: 95%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    &::before {
+      left: 9%;
+      width: 80%;
+    }
+    &::after {
+      width: 90%;
+      left: 5%;
+    }
+  }
+
+  .registration__form {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .registration {
+    width: 490px;
+    &::before {
+      width: 461px;
+      left: 14px;
+    }
+    &::after {
+      width: 472px;
+      left: 9px;
+    }
+  }
+}

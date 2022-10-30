@@ -1,0 +1,197 @@
+.form {
+  padding-top: 106px;
+  font-family: inherit;
+  color: #444;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.form__label {
+  padding-bottom: 6px;
+  &::after {
+    content: ' *';
+    color: red;
+  }
+}
+
+.form__input {
+  width: 338px;
+  border: 1px solid #F1F4F9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: inherit;
+  padding: 8px 0 8px 16px;
+  &::placeholder {
+    color: #C3CAD6;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: inherit;
+    padding: 8px 0 8px 0;
+    box-sizing: border-box;
+  }
+  &:placeholder-shown {
+    color: #C3CAD6;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: inherit;
+    padding: 8px 0 8px 16px;
+    box-sizing: border-box;
+  }
+  &--registration {
+    max-width: 280px;
+  }
+}
+
+.form__fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.form__fieldset-password {
+  margin-bottom: 42px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 591px;
+  justify-content: space-between;
+}
+
+.form__name {
+  width: 591px;
+}
+
+.form__fieldset-name {
+  width: 280px;
+}
+
+.form__email {
+  width: 280px;
+}
+
+.form__tel {
+  width: 280px;
+}
+
+.form__fieldset-ssn {
+  width: 280px;
+}
+
+.form__fieldset-bday {
+  width: 280px;
+}
+
+
+
+.form__fieldset-controls {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  &--registration {
+    width: 100%;
+  }
+}
+
+.form__button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  font-family: inherit;
+  padding: 9px 17px;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.form__submit {
+  background: #3464E0;
+  border: 1px solid #3464E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: inherit;
+}
+
+.form__reset-password {
+  color: #3464E0;
+  width: 149px;
+}
+
+.form__reject {
+  width: 123px;
+  padding: 9px 7px;
+  color: #c3cad6;
+  border: 1px solid #C3CAD6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+//custom checkbox
+
+.form__checkbox {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  display: none; //fallback
+  position: absolute;
+}
+
+.form__label-checkbox {
+  display: flex;
+  padding-left: 36px;
+  align-items: center;
+}
+
+.form__checkbox-checkbox {
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: -36px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #3464E0;
+  border-radius: 2px;
+}
+
+//checked
+
+.form__checkbox:checked + .form__checkbox-checkbox::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  left: 4px;
+  display: block;
+  position: absolute;
+  background-color: #3464e0;
+}
+
+@media (max-width: 500px) {
+  .form__input {
+    width: 95%;
+  }
+  .form__fieldset-checkboxes {
+    width: 80%;
+  }
+  .form__fieldset-controls--registration {
+    display: flex;
+    min-height: 135px;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+  }
+  .form__reject {
+    width: 180px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

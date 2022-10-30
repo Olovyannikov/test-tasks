@@ -1,0 +1,85 @@
+.page-header {
+  margin: 0 auto;
+  width: 100%;
+  padding: 14px 0 0;
+  background: $c-blue;
+}
+
+.page-header__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.page-header__row {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  display: flex;
+  width: 271px;
+  align-items: center;
+}
+
+.page-header__logo-image {
+  margin-right: 10px;
+}
+
+.page-header__logo-description {
+  display: flex;
+  min-width: 249px;
+  font-size: 1em;
+  line-height: 28px;
+  margin: 0;
+  color: $c-light;
+}
+
+.page-header__vacancy {
+  @include btn-reset;
+  font-family: inherit;
+  box-sizing: border-box;
+
+  max-width: 175px;
+  min-height: 42px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $c-light;
+
+  padding-left: 63px;
+  padding-right: 53px;
+
+  background-color: #1740AA;
+  background-image: url("../img/vacancy.svg");
+  background-repeat: no-repeat;
+  background-position: 22px center;
+  border-radius: 50px;
+
+  transition: .2s ease;
+  &:hover, &:focus     {
+    padding-left: 83px;
+
+    box-shadow: 2px 2px 2px #444444;
+  }
+}
+
+@media (max-width: 1150px) {
+  .page-header__row {
+  justify-content: space-between;
+}
+  .page-header__vacancy {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-header__logo {
+    width: 50px;
+  }
+  .page-header__logo-description {
+    display: none;
+  }
+}

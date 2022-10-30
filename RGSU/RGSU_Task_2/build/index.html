@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="page-header">
+    <section class="page-header__container">
+        <div class="page-header__row">
+            <a href="#" class="page-header__logo">
+                <img class="page-header__logo-image" src="img/brain.svg" alt="Корпоративный портал">
+                <h1 class="page-header__logo-description">
+                    Корпоративный портал
+                </h1>
+            </a>
+            <nav class="page-header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Руководство</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Сотрудники</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Документы</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">IT</a></li>
+                    <li
+                            class="navigation__list-item"><a href="#" class="navigation__list-link">Заявки в
+                        управления</a></li>
+                </ul>
+            </nav>
+            <button class="navigation__button navigation__button--open"></button>
+            <button class="page-header__vacancy">Вакансии</button>
+        </div>
+    </section>
+    <section class="page-header__container">
+        <div class="page-header__row">
+            <section class="page-header__infoblock infoblock">
+                <div class="infoblock__main-info">
+                    <img class="infoblock__main-info-avatar" src="img/avatar.jpg" alt="Какой-то мистер">
+                    <p class="infoblock__main-info-name" id="fullName">
+                        Гальчич
+                        Максим Александрович
+                    </p>
+                    <p class="infoblock__main-info-job">
+                        Управление информационных
+                        систем и технологий
+                    </p>
+                </div>
+            </section>
+            <section class="page-header__breadcrumbs breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#" class="breadcrumbs__list-link">Главная</a></li>
+                    <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link breadcrumbs__list-link--current">Бронирование</a></li>
+                </ul>
+                <h2 class="breadcrumbs__title">
+                    Бронирование
+                </h2>
+            </section>
+        </div>
+    </section>
+</header>
+
+    <svg class="divider"  xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" width="100%" height="55px" viewBox="0 0 1200 55"
+     enable-background="new 0 0 1200 55" xml:space="preserve" preserveAspectRatio="none">
+  <polygon fill="#2955C9" points="1200,0 0,0 0,55 "/>
+    </svg>
+
+<main class="page-main">
+    <section class="page-main__container">
+        <button class="page-main__control-button"></button>
+        <aside class="page-main__sidebar sidebar">
+            <div class="sidebar__item profile">
+                <h3 class="sidebar__item-title profile__title">
+                    Мой профиль
+                </h3>
+                <ul class="sidebar__list profile__list">
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--dashboard">
+                        Дашборд
+                    </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--profile">
+                            Редактировать профиль
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--notifications">
+                            Уведомления
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__item services">
+                <h3 class="sidebar__item-title services__title">
+                    Сервисы
+                </h3>
+                <ul class="sidebar__list profile__list">
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--doc">
+                            Расчетный лист
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--time">
+                            Эффективность
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--list">
+                            Заказ справок
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--calendar">
+                            Бронирование
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--responsive">
+                            Мат. ответственность
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__item portfolio">
+                <h3 class="sidebar__item-title sidebar__item-title--portfolio"> <!-- if onclick then change
+                ::before-element styles -->
+                    Портфолио
+                </h3>
+                <ul class="sidebar__list sidebar__portfolio--disable profile__list">
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--doc">
+                            Расчетный лист
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--time">
+                            Эффективность
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--list">
+                            Заказ справок
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--calendar">
+                            Бронирование
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--responsive">
+                            Мат. ответственность
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="page-main__wrapper">
+            <div class="page-main__form form">
+                <div class="form__tabs tab__list">
+                    <button class="tab__item tab__item--current tab__events">Мероприятия</button>
+                    <button class="tab__item tab__auditory">Аудитория</button>
+                    <button class="tab__item tab__history">История бронирования</button>
+                </div>
+                <form class="form__control form--active" action="/">
+                    <div class="form__wrapper">
+                        <div class="form__hall">
+                            <label class="form__label">
+                                Выберите площадку
+                            </label>
+                            <select class="form__select" name="address" id="address">
+                                <option class="form__select-option" value="0">Выберите</option>
+                                <option class="form__select-option" value="1">Коробка из под бананов</option>
+                                <option class="form__select-option" value="1">Коробка из под апельсинов</option>
+                            </select>
+                        </div>
+                        <div class="form__address">
+                        <label class="form__label">
+                            Выберите помещение
+                        </label>
+                            <select class="form__select" name="hall" id="hall">
+                                <option class="form__select-option" value="0">Выберите</option>
+                                <option class="form__select-option" value="1">Левый угол</option>
+                                <option class="form__select-option" value="1">Правый угол</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div class="form__table">
+                            <table class="table first-table">
+                                <thead class="table__header">
+                                <tr class="table__header-row">
+                                    <th class="table__header-div table__header-div--disabled"></th>
+                                    <th class="table__header-div">Понедельник</th>
+                                    <th class="table__header-div">Вторник</th>
+                                    <th class="table__header-div">Среда</th>
+                                    <th class="table__header-div">Четверг</th>
+                                    <th class="table__header-div">Пятница</th>
+                                    <th class="table__header-div">Суббота</th>
+                                    <th class="table__header-div">Воскресенье</th>
+
+                                    <th class="table__header-div">Понедельник</th>
+                                    <th class="table__header-div">Вторник</th>
+                                    <th class="table__header-div">Среда</th>
+                                    <th class="table__header-div">Четверг</th>
+                                    <th class="table__header-div">Пятница</th>
+                                    <th class="table__header-div">Суббота</th>
+                                    <th class="table__header-div">Воскресенье</th>
+
+                                    <th class="table__header-div">Понедельник</th>
+                                    <th class="table__header-div">Вторник</th>
+                                    <th class="table__header-div">Среда</th>
+                                    <th class="table__header-div">Четверг</th>
+                                    <th class="table__header-div">Пятница</th>
+                                    <th class="table__header-div">Суббота</th>
+                                    <th class="table__header-div">Воскресенье</th>
+                                </tr>
+                                <tr class="table__header-row table__header-row--subtitle">
+                                    <th class="table__header-div table__header-div--subtitle table__header-div--disabled"></th>
+                                    <th class="table__header-div table__header-div--subtitle">22.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">23.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">24.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">25.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">26.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">27.02.2020</th>
+
+                                    <th class="table__header-div table__header-div--subtitle">28.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">29.02.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">01.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">02.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">03.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">04.03.2020</th>
+
+                                    <th class="table__header-div table__header-div--subtitle">05.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">06.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">07.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">08.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">09.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">10.03.2020</th>
+
+                                    <th class="table__header-div table__header-div--subtitle">11.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">12.03.2020</th>
+                                    <th class="table__header-div table__header-div--subtitle">13.03.2020</th>
+                                </tr>
+                                </thead>
+
+                                <tbody class="table__body">
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">9:00 - 10:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--denied">
+                                        <span class="table__body-cell-text">Занято</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">10:00 - 11:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--denied">
+                                        <span class="table__body-cell-text">Занято</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--denied">
+                                        <span class="table__body-cell-text">Занято</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td><td class="table__body-div table__body-div--unavailable">
+                                    <span class="table__body-cell-text">Недоступно</span>
+                                </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td><td class="table__body-div table__body-div--unavailable">
+                                    <span class="table__body-cell-text">Недоступно</span>
+                                </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">11:00 - 12:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">12:00 - 13:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">13:00 - 14:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">14:00 - 15:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">15:00 - 16:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">16:00 - 17:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span></td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                <tr class="table__body-row">
+                                    <td class="table__body-div table__body-div--descript">17:00 - 18:00</td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span></td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--unavailable">
+                                        <span class="table__body-cell-text">Недоступно</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                    <td class="table__body-div table__body-div--available">
+                                        <span class="table__body-cell-text">Забронировать</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    <ol class="table__indicators">
+                        <li class="active table__indicator table__indicator--first" data-slide-to="0"></li>
+                        <li class="table__indicator table__indicator--second" data-slide-to="1"></li>
+                        <li class="table__indicator table__indicator--third" data-slide-to="2" ></li>
+                    </ol>
+
+                    <div class="form__reserve">
+                        <div class="form__reserve-wrapper">
+                            <div class="form__reserve-left">
+                            <label for="reserve" class="form__label">Бронирование</label>
+                            </div>
+                            <span id="reserve" class="form__address">Ул . Лосиноостровская 24, Конференц-зал</span>
+                        </div>
+
+                        <div class="form__reserve-wrapper">
+                            <div class="form__reserve-left">
+                                <label for="reserve" class="form__label">Дата</label>
+                            </div>
+                            <div class="form__group">
+                                <input placeholder="01.01.2020" type="text" class="form__input form__input--date">
+                                <select name="timeFrom" id="timeFrom"
+                                        class="form__select form__select-time form__select--time-from">
+                                    <option value="9">9-00</option>
+                                    <option value="10">10-00</option>
+                                </select>
+                                <select name="timeFor" id="timeFor"
+                                        class="form__select form__select-time form__select--time-for">
+                                    <option value="9">9-00</option>
+                                    <option value="10" selected>10-00</option>
+                                </select>
+                            </div>
+                    </div>
+                        <div class="form__reserve-wrapper">
+
+                            <div class="form__reserve-left">
+                                <label for="textarea" class="form__label">Название мероприятия</label>
+                            </div>
+                                <textarea name="textarea" id="textarea" class="form__textarea"></textarea>
+                        </div>
+
+                        <div class="form__reserve-wrapper">
+                            <div class="form__reserve-left">
+                                <label class="form__label">Выберите оборудование</label>
+                            </div>
+                            <div class="form__equipment">
+                                <div class="form__equipment-inner">
+                                <div class="form__equipment-wrapper">
+                                    <label for="checkbox-sound" class="form__equipment-label">Звуковое
+                                        оборудование</label>
+                                    <input checked id="checkbox-sound" type="checkbox" class="form__equipment-checkbox">
+                                </div>
+                                <div class="form__equipment-wrapper">
+                                    <label for="checkbox-mic" class="form__equipment-label">Микрофон</label>
+                                    <input id="checkbox-mic" type="checkbox" class="form__equipment-checkbox"></div>
+                                <div class="form__equipment-wrapper">
+                                    <label for="checkbox-projector" class="form__equipment-label">Мобильный
+                                        проектор</label>
+                                    <input id="checkbox-projector" type="checkbox" class="form__equipment-checkbox"></div>
+                                <div class="form__equipment-wrapper">
+                                    <label for="checkbox-computer" class="form__equipment-label">Компутер</label>
+                                    <input id="checkbox-computer" type="checkbox" class="form__equipment-checkbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__wrapper">
+                    <button class="form__button">
+                        Забронировать
+                    </button>
+                    </div>
+                </form>
+                <form action="/" class="form__audit">
+                    <div class="form__wrapper">
+                        Это страница АУДИТОРИЯ
+                    </div>
+                </form>
+                <form action="/" class="form__history">
+                    <div class="form__wrapper">
+                        Это страница ИСТОРИЯ
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <p class="page-footer__copyright">
+            © Личный кабинет ППС РГСУ
+        </p>
+        <p class="page-footer__contacts">
+            Контакты для связи:
+            <a class="page-footer__link" href="mailto:prepod@rgsu.net">prepod@rgsu.net</a>
+        </p>
+        <p class="page-footer__error">
+            <a class="page-footer__link" href="#">Сообщить об ошибке</a>
+        </p>
+    </div>
+</footer>
+<script src="js/navigation.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>

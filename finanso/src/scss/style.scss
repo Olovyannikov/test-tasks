@@ -1,0 +1,14 @@
+@import "vendor/normalize";
+@import "vendor/smart-grid";
+@import "general/variables";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/scaffoldings";
+
+@import "blocks/rating/rating";
+@import "blocks/rating/rates";
+@import "blocks/reviews/reviews";
+@import "blocks/card/card";
+
+@import "components/star-rating/star-rating";
+@import "components/progress/progress";

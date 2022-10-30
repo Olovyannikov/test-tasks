@@ -1,0 +1,41 @@
+.infoblock {
+  width: 340px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.infoblock__main-info {
+  width: 194px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.infoblock__main-info-avatar {
+  border-radius: 50%;
+}
+
+.infoblock__main-info-name {
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.infoblock__main-info-job {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  color: $c-inactive;
+}
+
+@media (max-width: 560px) {
+  .infoblock {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+}

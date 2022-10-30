@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="page-header">
+    <section class="page-header__container">
+        <div class="page-header__row">
+            <a href="#" class="page-header__logo">
+                <img class="page-header__logo-image" src="img/brain.svg" alt="Корпоративный портал">
+                <h1 class="page-header__logo-description">
+                    Корпоративный портал
+                </h1>
+            </a>
+            <nav class="page-header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Руководство</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Сотрудники</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">Документы</a></li>
+                    <li class="navigation__list-item"><a href="#" class="navigation__list-link">IT</a></li>
+                    <li
+                            class="navigation__list-item"><a href="#" class="navigation__list-link">Заявки в
+                        управления</a></li>
+                </ul>
+            </nav>
+            <button class="navigation__button navigation__button--open"></button>
+            <button class="page-header__vacancy">Вакансии</button>
+        </div>
+    </section>
+    <section class="page-header__container">
+        <div class="page-header__row">
+            <section class="page-header__infoblock infoblock">
+                <div class="infoblock__main-info">
+                    <img class="infoblock__main-info-avatar" src="img/avatar.jpg" alt="Какой-то мистер">
+                    <p class="infoblock__main-info-name" id="fullName">
+                        Гальчич
+                        Максим Александрович
+                    </p>
+                    <p class="infoblock__main-info-job">
+                        Управление информационных
+                        систем и технологий
+                    </p>
+                </div>
+            </section>
+            <section class="page-header__breadcrumbs breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#" class="breadcrumbs__list-link">Главная</a></li>
+                    <li class="breadcrumbs__list-item"><a
+                            class="breadcrumbs__list-link breadcrumbs__list-link--current">Ученый совет</a></li>
+                </ul>
+                <h2 class="breadcrumbs__title">
+                    Ученый совет
+                </h2>
+            </section>
+        </div>
+    </section>
+</header>
+
+<svg class="divider"  xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" width="100%" height="55px" viewBox="0 0 1200 55"
+     enable-background="new 0 0 1200 55" xml:space="preserve" preserveAspectRatio="none">
+  <polygon fill="#2955C9" points="1200,0 0,0 0,55 "/>
+    </svg>
+
+<main class="page-main">
+    <section class="page-main__container">
+        <button class="page-main__control-button"></button>
+        <aside class="page-main__sidebar sidebar">
+            <div class="sidebar__item profile">
+                <h3 class="sidebar__item-title profile__title">
+                    Мой профиль
+                </h3>
+                <ul class="sidebar__list profile__list">
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--dashboard">
+                            Дашборд
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--profile">
+                            Редактировать профиль
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--notifications">
+                            Уведомления
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__item services">
+                <h3 class="sidebar__item-title services__title">
+                    Сервисы
+                </h3>
+                <ul class="sidebar__list profile__list">
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--doc">
+                            Расчетный лист
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--time">
+                            Эффективность
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--list">
+                            Заказ справок
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--calendar">
+                            Бронирование
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--responsive">
+                            Мат. ответственность
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar__item portfolio">
+                <h3 class="sidebar__item-title sidebar__item-title--portfolio"> <!-- if onclick then change
+                ::before-element styles -->
+                    Портфолио
+                </h3>
+                <ul class="sidebar__list sidebar__portfolio--disable profile__list">
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--doc">
+                            Расчетный лист
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--time">
+                            Эффективность
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--list">
+                            Заказ справок
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--calendar">
+                            Бронирование
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item profile__list-item">
+                        <a href="#" class="sidebar__list-link profile__list-link profile__list-link--responsive">
+                            Мат. ответственность
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="page-main__wrapper">
+            <div class="page-main__form form">
+                <div class="form__tabs tab__list">
+                    <button class="tab__item tab__item--current tab__events">Текущий</button>
+                    <button class="tab__item tab__auditory">Архив</button>
+                    <button class="tab__item tab__history hidden">История бронирования</button>
+                </div>
+                <div class="form__control form--active">
+                    <div class="form__wrapper form__wrapper--full">
+                        <h2 class="form__title">Ученый совет: <span class="form__title-date">22 августа 2020</span></h2>
+                    </div>
+                    <div class="form__wrapper form__wrapper--full">
+                        <div class="form__information">
+                            <p class="form__information-collection form__information-collection--date">Дата: <span
+                                    class="form__information-date">05.05.1987
+                            </span></p>
+                            <p class="form__information-collection form__information-collection--time">Время: <span
+                                    class="form__information-time">11:00
+                            </span></p>
+                            <p class="form__information-collection form__information-collection--location">Место: <span
+                                    class="form__information-location">Зал
+                                заседания ученого совета
+                            </span></p>
+                            <button class="form__information-button">Повестка</button>
+                        </div>
+                    </div>
+                    <div class="form__wrapper form__wrapper--full">
+                        <div class="form__detalisation">
+                                <p class="form__detalisation-description">Детализация повестки</p>
+                                <button class="form__detalisation-button">Добавить</button>
+                            <button class="form__button-add"></button>
+                        </div>
+                </div>
+                    <div class="form__wrapper form__wrapper--full">
+                    <div class="detalisation detalisation--full">
+                        <table class="detalisation__table">
+                            <thead class="detalisation__table-head">
+                            <tr class="detalisation__table-head_row">
+                                <th class="detalisation__table-title detalisation__table-title--first_column">Вопрос
+                                    повестки</th>
+                                <th class="detalisation__table-title">Докладкич</th>
+                                <th class="detalisation__table-title">Решение <br> коллегиального органа</th>
+                                <th class="detalisation__table-title">Регламент</th>
+                                <th class="detalisation__table-title"> </th>
+                            </tr>
+                            </thead>
+                            <tbody class="detalisation__table-body">
+                            <tr class="detalisation__table-body_row">
+                                <td class="detalisation__table-first_column">
+                                    Сообщество и наши авторы пережили трансформацию, и теперь они еще умнее, профессиональнее
+                                    <button class="detalisation__button detalisation__button--edit"></button>
+                                    <button class="detalisation__button detalisation__button--delete"></button>
+                                </td>
+                                <td class="detalisation__table-name">
+                                    Скороходова
+                                    Елена Юрьевна
+                                </td>
+                                <td class="detalisation__table-result">
+                                    Кадровый коммитет РГСУ №313 от 24.12.2019
+                                </td>
+                                <td class="detalisation__table-reglament">
+                                    15 минут
+                                </td>
+                                <td class="detalisation__table-doc"><a class="detalisation__table-doc-link"
+                                                                       href="#">Результаты</a>
+                                </td>
+                            </tr>
+                            <tr class="detalisation__table-body_row">
+                                <td class="detalisation__table-first_column">
+                                    Сообщество и наши авторы пережили трансформацию, и теперь они еще умнее, профессиональнее
+                                    <button class="detalisation__button detalisation__button--edit"></button>
+                                    <button class="detalisation__button detalisation__button--delete"></button>
+                                </td>
+                                <td class="detalisation__table-name">
+                                    Скороходова
+                                    Елена Юрьевна
+                                </td>
+                                <td class="detalisation__table-result">
+                                    Кадровый коммитет РГСУ №313 от 24.12.2019
+                                </td>
+                                <td class="detalisation__table-reglament">
+                                    5 минут
+                                </td>
+                                <td class="detalisation__table-doc"><a href="#" class="detalisation__table-doc-link">
+                                    Результаты</a>
+                                    </td>
+                            </tr>
+                            <tr class="detalisation__table-body_row">
+                                <td class="detalisation__table-first_column">
+                                    Сообщество и наши авторы пережили трансформацию, и теперь они еще умнее, профессиональнее
+                                    <button class="detalisation__button detalisation__button--edit"></button>
+                                    <button class="detalisation__button detalisation__button--delete"></button>
+                                </td>
+                                <td class="detalisation__table-name">
+                                    Скороходова
+                                    Елена Юрьевна
+                                </td>
+                                <td class="detalisation__table-result">
+                                    Кадровый коммитет РГСУ №313 от 24.12.2019
+                                </td>
+                                <td class="detalisation__table-reglament">
+                                    5 минут
+                                </td>
+                                <td class="detalisation__table-doc detalisation__table-doc--disabled"></td>
+                            </tr>
+                            <tr class="detalisation__table-body_row">
+                                <td class="detalisation__table-first_column">
+                                    Сообщество и наши авторы пережили трансформацию, и теперь они еще умнее, профессиональнее
+                                    <button class="detalisation__button detalisation__button--edit"></button>
+                                    <button class="detalisation__button detalisation__button--delete"></button>
+                                </td>
+                                <td class="detalisation__table-name">
+                                    Скороходова
+                                    Елена Юрьевна
+                                </td>
+                                <td class="detalisation__table-result">
+                                    Кадровый коммитет РГСУ №313 от 24.12.2019
+                                </td>
+                                <td class="detalisation__table-reglament">
+                                    5 минут
+                                </td>
+                                <td class="detalisation__table-doc"><a class="detalisation__table-doc-link" href="#">
+                                    Результаты</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <div class="form__wrapper form__wrapper--full">
+                        <div class="form__composition">
+                            <p class="form__composition-description">Подтвержденный состав</p>
+                            <button class="form__composition-add form__composition-add--open"></button>
+                        </div>
+                    </div>
+                    <div class="form__wrapper form__wrapper--full">
+                        <div class="form__wrapper composition">
+                            Прекрасные люди!
+                        </div>
+                    </div>
+                </div>
+                <div class="form__audit"></div>
+                <div class="form__history"></div>
+          </div>
+
+        </section>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <p class="page-footer__copyright">
+            © Личный кабинет ППС РГСУ
+        </p>
+        <p class="page-footer__contacts">
+            Контакты для связи:
+            <a class="page-footer__link" href="mailto:prepod@rgsu.net">prepod@rgsu.net</a>
+        </p>
+        <p class="page-footer__error">
+            <a class="page-footer__link" href="#">Сообщить об ошибке</a>
+        </p>
+    </div>
+</footer>
+<script src="js/navigation.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
+</body>
+</html>

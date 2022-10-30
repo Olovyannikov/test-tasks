@@ -1,0 +1,57 @@
+mixin card(avatar='', username, status, country, countryName, date, time, rating, messagesCount, reviewsPlus, reviewsMinus, likesCount, dislikesCount)
+    - avatar = avatar !== ('') ? avatar : "no-avatar.svg"
+    - cardStatus = status === 'Опытный' ? 'card__status_exp' : 'card__status_banned'
+    article.card
+        .card__inner
+            button(type='button' aria-label='Открыть меню отзыва').card__button-more Открыть меню отзыва
+            ul.card__menu
+                li.card__menu-item Ответить
+                li.card__menu-item Перейти в профиль
+                li.card__menu-item Удалить
+            .card__info
+                .card__user-info
+                    .card__user-left
+                        .card__avatar
+                            img(loading="lazy" src='img/' + avatar)
+                    .card__user-right
+                        .card__name #{username}
+                            span.card__status(class=cardStatus) #{status}
+                        .card__location
+                            img(src='img/' + country + '.svg')
+                            | #{countryName}
+                        .card__datetime
+                            span.card__datetime-date #{date}&nbsp;
+                            | в&nbsp;
+                            span.card__datetime-time #{time}
+                .card__mark
+                    .card__rating #{rating}
+                    .card__messages-count #{messagesCount} сообщений
+                    .card__about
+                        p Музыкальный магазин “Super Sound”,...
+                            a(href='#')  Перейти
+            .card__review
+                .card__review-block
+                    h5.card__review-title.card__review-title_plus
+                        svg(width=20 height=20 fill='#10b97b')
+                            use(href="#plus-circle")
+                        | Достоинства
+                    p.card__review-text #{reviewsPlus}
+                .card__review-block
+                    h5.card__review-title.card__review-title_minus
+                        svg(width=20 height=20)
+                            use(href='#minus-circle')
+                        | Недостатки
+                    p.card__review-text #{reviewsMinus}
+            .card__buttons
+                button.card__response(type='button') Ответить
+                .card__state
+                    .card__state-section
+                        button.card__state-btn.card__state-btn_like(type='button' aria-label='Like') Нравится
+                            svg(width='22' height='22')
+                                use(href='#thumb')
+                            span.card__state-counter #{likesCount}
+                    .card__state-section
+                        button.card__state-btn.card__state-btn_dislike(type='button' aria-label='Dislike') Не Нравится
+                            svg(width='22' height='22')
+                                use(href='#thumb')
+                            span.card__state-counter #{dislikesCount}

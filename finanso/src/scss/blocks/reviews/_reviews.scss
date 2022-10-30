@@ -1,0 +1,41 @@
+.reviews__title {
+  margin-bottom: 20px;
+  @include lg-block {
+    font-size: rem-calc(20);
+    line-height: rem-calc(32);
+    margin-bottom: 27px;
+  }
+}
+
+.reviews__more-btn {
+  @include btn-reset;
+  color: $c-main-blue;
+  font-size: rem-calc(14);
+  line-height: rem-calc(18);
+  display: flex;
+  font-weight: bold;
+  font-family: inherit;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px 8px 21px;
+  border: 1px solid #1373E5;
+  box-sizing: border-box;
+  border-radius: 40px;
+  margin: 20px auto 40px;
+  transition: .3s;
+  span {
+    margin-left: 10px;
+    background: rgba(19, 115, 229, 0.1);
+    padding: 4px;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    background: $c-main-blue;
+    color: #fff;
+    span {
+      background: #fff;
+      color: $c-main-blue;
+    }
+  }
+}

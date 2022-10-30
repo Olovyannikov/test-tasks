@@ -1,0 +1,20 @@
+.rates__items {
+  @include list-reset;
+}
+
+.rates__item {
+}
+
+.rates__title {
+  color: $c-main-black;
+  font-weight: 400;
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+  margin: 0;
+}
+
+.rates__progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

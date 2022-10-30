@@ -1,0 +1,38 @@
+.tab__list {
+  padding: 19px 0 0;
+  margin-bottom: 49px;
+  margin-left: 19px;
+  margin-right: 19px;
+  border-bottom: 1px solid #E4ECFA;
+}
+
+.tab__item {
+  @include btn-reset;
+  color: $c-grey;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  min-width: 160px;
+
+  &--current {
+    padding-bottom: 18px;
+    border-bottom: 2px solid #3464E0;;
+    color: #444;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tab__list {
+    border: none;
+  }
+
+  .tab__item {
+    text-align: left;
+    padding-bottom: 10px;
+    &--current {
+      padding-bottom: 10px;
+      border: none;
+    }
+  }
+}

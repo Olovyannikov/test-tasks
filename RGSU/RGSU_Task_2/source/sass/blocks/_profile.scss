@@ -1,0 +1,36 @@
+.profile__list-link {
+  background: url("../img/dashboard.svg") no-repeat 16px 18px;
+  &--profile{
+    background: url("../img/profile.svg") no-repeat 16px 18px;
+  }
+  &--notifications{
+    position: relative;
+    background: url("../img/notifications.svg") no-repeat 16px 18px;
+    &::after {
+      content: '1';
+      font-size: 15px;
+      line-height: 18px;
+      display: inline-block;
+      background: #E06364;
+      color: #FFFFFF;
+      border-radius: 50%;
+      padding: 3px 9px;
+      margin-left: 9px;
+    }
+  }
+  &--doc {
+    background: url("../img/doc.svg") no-repeat 16px 18px;
+  }
+  &--time {
+    background: url("../img/time.svg") no-repeat 16px 18px;
+  }
+  &--list {
+    background: url("../img/checklist.svg") no-repeat 16px 18px;
+  }
+  &--calendar {
+    background: url("../img/calendar.svg") no-repeat 16px 18px;
+  }
+  &--responsive {
+    background: url("../img/responsive.svg") no-repeat 16px 18px;
+  }
+}

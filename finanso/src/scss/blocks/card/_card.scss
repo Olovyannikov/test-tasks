@@ -1,0 +1,410 @@
+.card {
+  background: #fff;
+  box-shadow: 0 6px 29px rgba(15, 16, 17, 0.05);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card__inner {
+  padding: 24px 20px;
+  position: relative;
+  @include sm-block {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+
+.card__menu {
+  @include list-reset;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 6px 29px rgba(15, 16, 17, 0.05);
+  border-radius: 5px;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: 1s;
+}
+
+.card__menu-item {
+  cursor: pointer;
+  padding: 20px 20px;
+  font-weight: bold;
+  transition: .3s;
+
+  &:hover {
+    background: $c-main-grey;
+    color: #fff;
+  }
+
+  &:first-child {
+    margin-top: 50px;
+  }
+}
+
+
+.card__button-more {
+  @include btn-reset;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 999;
+  transition: .5s;
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: $c-main-grey;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    @include center;
+    box-shadow: 0 4px 0 0 $c-main-grey;
+    transition: .5s;
+  }
+
+  &::before {
+    background-color: $c-main-grey;
+    top: 4.5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &_active {
+    &::after, &::before {
+      box-shadow: none;
+      width: 100%;
+      border-radius: 0;
+      transform: rotate(45deg);
+      left: 0;
+      top: 50%;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+    + .card__menu {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
+}
+
+.card__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__user-left {
+  width: 40px;
+  height: 40px;
+  margin-right: 17px;
+  @include sm-block {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.card__user-right {
+  @include sm-block {
+    display: grid;
+    align-items: flex-start;
+    width: 423px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+
+  }
+}
+
+.card__avatar {
+  margin-right: 17px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card__user-info {
+  display: flex;
+  @include lg-block {
+    width: 100%;
+  }
+}
+
+.card__mark {
+  display: flex;
+  align-items: center;
+  @include sm-block {
+    margin-left: 65px;
+    margin-top: -20px;
+  }
+}
+
+.card__name {
+  font-weight: 600;
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card__location {
+  margin-bottom: 4px;
+  font-size: rem-calc(14);
+  line-height: rem-calc(24);
+  color: $c-text-black;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+
+.card__status {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: rem-calc(10);
+  line-height: rem-calc(12);
+  color: $c-green;
+  border-radius: 5px;
+  border: 1px solid $c-green;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px 2px;
+
+  &_banned {
+    border-color: $c-red;
+    color: $c-red;
+  }
+}
+
+.card__datetime {
+  color: $c-main-grey;
+  font-size: rem-calc(14);
+  line-height: rem-calc(24);
+  margin-bottom: 4px;
+}
+
+.card__rating {
+  position: absolute;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+  font-weight: 600;
+
+  &::before {
+    margin-right: 3px;
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-image: url('../img/icons/star-filled.svg');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+  }
+
+  @include sm-block {
+    top: 26px;
+    right: 63px;
+    margin: 0;
+  }
+}
+
+.card__about {
+  margin: 0;
+  margin-left: 60px;
+
+  p {
+    color: #42464B;
+    margin: 0;
+    font-size: rem-calc(14);
+    line-height: rem-calc(24);
+  }
+
+  a {
+    color: #1373E4;
+  }
+
+  @include sm-block {
+    display: flex;
+    margin-left: 0;
+  }
+}
+
+.card__review {
+  margin-top: 9px;
+  @include sm-block {
+    margin-top: 18px;
+  }
+  @include lg-block {
+    margin-bottom: 19px;
+  }
+}
+
+.card__review-block {
+  @include sm-block {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.card__review-title {
+  @include sm-block {
+    font-size: 0;
+    margin-top: 2px;
+  }
+
+  &_minus {
+    fill: #e3405e;
+    @include sm-block {
+      fill: $c-main-grey;
+    }
+  }
+}
+
+.card__review-text {
+  color: $c-text-black;
+  font-size: rem-calc(14);
+  line-height: rem-calc(24);
+  margin: 0 0 9px;
+}
+
+.card__review-title {
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+  margin: 0 0 5px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 6.67px;
+  }
+}
+
+.card__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.card__state {
+  display: flex;
+  margin-left: auto;
+}
+
+.card__response {
+  @include btn-reset;
+  font-size: rem-calc(14);
+  line-height: rem-calc(24);
+  color: $c-main-blue;
+  font-weight: 600;
+  transition: .3s;
+  @include sm-block {
+    padding: 10px 29px;
+    border-radius: 40px;
+    border: 1px solid $c-main-blue;
+    line-height: rem-calc(18);
+    &:hover {
+      background: $c-main-blue;
+      color: #fff;
+    }
+  }
+}
+
+.card__state-section {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.card__state-btn {
+  @include btn-reset;
+  width: auto;
+  height: 22px;
+  font-size: 0;
+  display: flex;
+  margin-right: 4px;
+  svg {
+    min-width: 22px;
+    min-height: 22px;
+    fill: #87919C;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    svg {
+      fill: #219653;
+    }
+  }
+
+  &_dislike {
+    svg {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      svg {
+        fill: #EB5757;
+      }
+    }
+  }
+
+
+}
+
+.card__state-counter {
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+  color: $c-main-grey;
+  font-weight: 600;
+  margin-right: 4px;
+  display: block;
+}
+
+.card__messages-count {
+  display: none;
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+  color: $c-main-grey;
+  margin-right: 33px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    background: $c-grey;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include sm-block {
+    display: block;
+  }
+}

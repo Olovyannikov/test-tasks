@@ -1,0 +1,29 @@
+.progress {
+  background-color: $c-lightblue;
+  border-radius: 5px;
+  height: 6px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-bar {
+    background: #10B97B;
+    border-radius: 5px;
+    color: $c-main-black;
+    display: flex;
+    height: 6px;
+    width: 0;
+    transition: 1.5s ease;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.progress-info {
+  font-weight: 500;
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+  text-align: center;
+  margin-left: 11px;
+  margin-right: 6px;
+}

@@ -23,7 +23,7 @@ coverage
 .grunt
 bower_components
 .lock-wscript
-build/Release
+RGSU/RGSU_Task_1/build/Release
 node_modules/
 jspm_packages/
 web_modules/
@@ -116,7 +116,7 @@ $RECYCLE.BIN/
 **/nbproject/private/
 **/nbproject/Makefile-*.mk
 **/nbproject/Package-*.bash
-build/
+RGSU/RGSU_Task_1/build/
 nbbuild/
 dist/
 nbdist/

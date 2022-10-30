@@ -1,0 +1,21 @@
+.page-footer {
+  background: #6E7781;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 46px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: $c-grey;
+}
+
+@media (max-width: 1200px) {
+  .page-footer__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
